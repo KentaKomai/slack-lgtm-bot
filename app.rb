@@ -16,7 +16,10 @@ post '/lgtm' do
   JSON.generate(
     username: "LGTM",
     attachments: [
-      {image_url: "http://my-website.com/path/to/image.jpg"}
+      {
+        fallback: "lgtm bot",
+        image_url: "http://my-website.com/path/to/image.jpg"
+      }
     ]
   )
 end
