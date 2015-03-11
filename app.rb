@@ -12,6 +12,7 @@ post '/' do
   })
 end
 get '/lgtm' do
+  content_type :json
   JSON.generate(
     text: "",
     username: "LGTM",
@@ -26,6 +27,7 @@ get '/lgtm' do
 end
 
 post '/lgtm' do
+  content_type :json
   JSON.generate(
     text: "",
     username: "LGTM",
