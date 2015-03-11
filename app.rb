@@ -25,6 +25,7 @@ post '/' do
     f.read
   end
   doc = Nokogiri::HTML.parse(html,nil,charset)
+  p "-------"
   d = doc.xpath('//input[@id="imageUrl"]').first
   lgtmUrl = d['value'].to_s
   {
@@ -32,7 +33,7 @@ post '/' do
     :username => "L G T M",
     :attachments => [{
       :text => "",
-      :image_url => lgtmUrl
+      :image_url => "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
     }],
     :icon_image => "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
   }.to_json
