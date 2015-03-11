@@ -18,7 +18,7 @@ post '/lgtm' do
     username:"LGTM",
     attachments:[{
       text:"",
-      image_url:"https://www.googledrive.com/host/0B-ODBm7gVpU3fmdfYkxmOHZ3UV84a0o4UjI0dkdVY3BjQXA3NWFHS0VsMHdYZ0Jqa1RjNjA/MONS_1578.PNG"
+      image_url:"http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
     }]
   )
 end
