@@ -53,7 +53,7 @@ end
 post '/gacha' do
   content_type :json
   JSON.generate(
-    text:"",
+    text:"LGTM",
     username:"LGTM",
     attachments:[{
       text:"",
