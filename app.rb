@@ -11,7 +11,6 @@ get '/' do
     f.read
   end
   doc = Nokogiri::HTML.parse(html,nil,charset)
-  p "-------"
   d = doc.xpath('//input[@id="imageUrl"]').first
   p d['value'].to_s
   'hello'
@@ -25,7 +24,6 @@ post '/' do
     f.read
   end
   doc = Nokogiri::HTML.parse(html,nil,charset)
-  p "-------"
   d = doc.xpath('//input[@id="imageUrl"]').first
   lgtmUrl = d['value'].to_s
   {
