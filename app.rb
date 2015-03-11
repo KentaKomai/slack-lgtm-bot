@@ -12,20 +12,6 @@ post '/' do
   })
 end
 
-get '/lgtm' do
-  JSON.generate(
-    text: "",
-    username: "LGTM",
-    attachments: [
-      {
-        text: "",
-        fallback: "lgtm bot",
-        image_url: "http://my-website.com/path/to/image.jpg"
-      }
-    ]
-  )
-end
-
 post '/lgtm' do
   JSON.generate(
     text:"LGTM",
@@ -33,7 +19,6 @@ post '/lgtm' do
     attachments:[{
       text:"",
       image_url:"https://www.googledrive.com/host/0B-ODBm7gVpU3fmdfYkxmOHZ3UV84a0o4UjI0dkdVY3BjQXA3NWFHS0VsMHdYZ0Jqa1RjNjA/MONS_1578.PNG"
-    }],
-    icon_url:"http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
+    }]
   )
 end
