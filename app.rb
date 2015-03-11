@@ -53,8 +53,8 @@ end
 post '/gacha' do
   content_type :json
   JSON.generate(
-    text:":star2:ガチャっと",
-    username:"パズドラガチャ",
+    text:"",
+    username:"LGTM",
     attachments:[{
       text:"",
       image_url:"https://www.googledrive.com/host/0B-ODBm7gVpU3fmdfYkxmOHZ3UV84a0o4UjI0dkdVY3BjQXA3NWFHS0VsMHdYZ0Jqa1RjNjA/MONS_1578.PNG"
