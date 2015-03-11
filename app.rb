@@ -33,7 +33,7 @@ post '/' do
     :username => "L G T M",
     :attachments => [{
       :text => "",
-      :image_url => "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
+      :image_url => lgtmUrl
     }],
     :icon_image => "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
   }.to_json
