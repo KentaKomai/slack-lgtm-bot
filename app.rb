@@ -6,13 +6,6 @@ get '/' do
 end
 
 post '/' do
-  JSON.generate({
-    username: "LGTM",
-    text:"< HELLO"
-  })
-end
-
-post '/lgtm' do
   JSON.generate(
     text:"LGTM",
     username:"LGTM",
