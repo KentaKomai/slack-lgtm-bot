@@ -6,5 +6,8 @@ get '/' do
 end
 
 post '/' do
-  JSON.generate({text:"< HELLO"})
+  JSON.generate({
+    username: "LGTM",
+    text:"< HELLO"
+  })
 end
