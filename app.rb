@@ -35,6 +35,6 @@ post '/' do
       :text => "",
       :image_url => lgtmUrl
     }],
-    :icon_image => "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
+    :icon_url => "http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_540,w_720/tsjkqrdmdgfbuatbqklv.png"
   }.to_json
 end
